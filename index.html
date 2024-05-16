@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja para testes</title>
+
+     <!--Link para icones-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Linkando com outro arquivo-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Linkando com js-->
+    <script src="js/functions.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1> <i style="color: green;" class="bi bi-currency-dollar"></i> FacilShop</h1>
+
+        <!-- Tabela dos produtos-->
+        <table class="table table-striped">
+            <thead>   <!--Cabeçalho da tabela-->
+                <tr> <!--tr Linhas e th table head(coluna cabeçalho)-->
+                    <th scope="col">Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço Unitario</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                </tr>
+            
+            </thead>
+            <!--Uma abrevicação: table>thead>tr>th*5-->
+            <!--Isso é uma abreviação das linhas acima-->
+            <tbody>
+                <tr> <!--Linha do Celular-->
+                    <td><!--Table data(Dados da tabela)-->
+                        <img src="img/celular.jpeg" alt="celular" width="150">
+                    </td> 
+                    <td>
+                        <div>Celular Motorola</div>
+                        <div><span class="codigo-cor">Código</span>: 0023</div>
+                        <div><span class="codigo-cor">Cor</span>: Cinza</div>
+                    
+                    </td>
+                    <!--preço-->
+                    <td id="valor_1"> R$ 1999</td>
+
+                    <td> <!--qtd-->
+                        <span class="badge text-bg-danger" onclick="alterarQtd(1, '-')"><i class="bi bi-bag-dash"></i></span>
+                        <span id="qtd_1">0</span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(1, '+')"><i class="bi bi-bag-plus"></i></span>
+                    </td>
+
+                    <!--total-->
+                    <td id="total_1">0</td>
+                </tr>
+
+                <tr><!--Linha do notebook-->
+                    <td>
+                        <img src="img/notebook.jpeg" alt="notebook" width="200">
+                    </td>
+                    <td>
+                        <div>Notebook Gamer</div>
+                        <div><span class="codigo-cor">Código</span>: 12345</div>
+                        <div><span class="codigo-cor">Cor</span>: Preto-Vermelho</div>
+                    </td>
+                    <!--preço-->
+                    <td id="valor_2">R$ 4999</td>
+
+                    <td> <!--qtd-->
+                        <span class="badge text-bg-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-bag-dash"></i></span>
+                        <span id="qtd_2">0</span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(2, '+')"><i class="bi bi-bag-plus"></i></span>
+                    </td>
+                    <!--total-->
+                    <td id="total_2">0</td>
+                </tr>
+
+                <tr><!--Linha da tv-->
+                    <td>
+                        <img src="img/tv.jpeg" alt="tv" width="200">
+                    </td>
+                    <td>
+                        <div>Televisao Samsung 4k</div>
+                        <div><span class="codigo-cor">Código</span>: 0123</div>
+                        <div><span class="codigo-cor">Cor</span>: Preto</div>
+                    </td>
+                    <!--preço-->
+                    <td id="valor_3">R$ 2500</td>
+
+                    <td> <!--qtd-->
+                        <span class="badge text-bg-danger" onclick="alterarQtd(3, '-')"><i class="bi bi-bag-dash"></i></span>
+                        <span id="qtd_3">0</span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(3, '+')"><i class="bi bi-bag-plus"></i></span>
+                    </td>
+
+                    <!--total-->
+                    <td id="total_3">0</td>
+                </tr>
+
+                <tr><!--Linha da geladeira-->
+                    <td>
+                        <img src="img/geladeira.jpeg" alt="geladeira" width="200">
+                    </td>
+                    <td>
+                        <div>Geladeira frost free</div>
+                        <div><span class="codigo-cor">Código</span>: 1123</div>
+                        <div><span class="codigo-cor">Cor</span>: Branco</div>
+                    </td>
+                    <!--preço-->
+                    <td id="valor_4">R$ 2000</td>
+
+                    <td> <!--qtd-->
+                        <span class="badge text-bg-danger" onclick="alterarQtd(4, '-')"><i class="bi bi-bag-dash"></i></span>
+                        <span id="qtd_4">0</span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(4, '+')"><i class="bi bi-bag-plus"></i></span>
+                    </td>
+
+                    <!--total-->
+                    <td id="total_4">0</td>
+                </tr>
+            </tbody>
+        </table>
+  
+<!--Fim da tabela de produtos-->
+
+
+
+        <footer class="text-center" >     <!--Rodapé-->
+            <span><i style="color: rgb(245, 248, 245);" class="bi bi-cart-check"></i> Subtotal: R$ <span id="subtotal">0</span></span>
+        </footer>
+    </div>
+</body>
+</html>

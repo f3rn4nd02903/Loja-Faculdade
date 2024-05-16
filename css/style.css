@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: rgb(56, 55, 55);
+    color: #f7f3f3;
+    margin: 30px 0px;
+    text-align: center;
+    border: 3px solid;
+    border-color: azure;
+}
+
+footer{
+    background-color: rgb(46, 44, 44);
+    padding: 15px;
+    color: white;
+}
+
+.codigo-cor{
+    color: red;
+}
+
+body{
+    
+}
